@@ -9,15 +9,15 @@ namespace Core.Tests.Services
 {
     public class EmailServiceTests
     {
-        [Fact]
-        public async Task CanSendEmail()
-        {
-            IEmailService sut = GetSut();
+        //[Fact]
+        //public async Task CanSendEmail()
+        //{
+        //    IEmailService sut = GetSut();
 
-            string expected = await sut.SendEmail("blog admin", "admin@blog.com", "test@test.com", "test", "testing");
+        //    string expected = await sut.SendEmail("blog admin", "admin@blog.com", "test@test.com", "test", "testing");
 
-            Assert.True(string.IsNullOrEmpty(expected));
-        }
+        //    Assert.True(string.IsNullOrEmpty(expected));
+        //}
 
         private IEmailService GetSut()
         {
